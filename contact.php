@@ -1,6 +1,6 @@
 <?php require_once 'header.php'; ?>
-<section id="contacto">        
-    <h2 class="section__subtitle">Contacto</h2>
+<h2 class="section__subtitle">Contacto</h2>
+<div class="formulario">        
     <form class="section__form" action="">
             <label class="form-label" for="nombre">Nombre:</label>
             <input class="form-control" type="text" id="nombre" name="nombre" required>
@@ -15,5 +15,5 @@
             <input type="submit" class="btn btn-primary" value="Enviar">
             <br>
     </form>
-</section>
+</div>
 <?php require_once 'footer.php'; ?>

@@ -1,134 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-		header {
-			width: 100%;
-		}
+	@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+	
+	header {
+		width: 100%;
+	}
+	
+	.encabezado {
+		width: 100%;
+		height: 20vh;
+		padding-left: 3vh;
+		background-image:  url(../img/fondo.png);
+		background-size: cover;
+		color: #fff;
+	}	
 		
-		.encabezado {
-			width: 100%;
-			height: 20vh;
-			padding-left: 3vh;
-			background-image:  url(../img/fondo.png);
-			background-size: cover;
-			color: #fff;
-		}	
-			
-		.encabezado__image {
-			height: 12vh;
-			border-radius: 20%;
-		}
+	.encabezado__image {
+		height: 12vh;
+		border-radius: 20%;
+	}
 
-		.encabezado__texto {
-			height: 12vh;
-			font-family: 'Pacifico', cursive;
-			text-shadow: 2px 2px 2px rgb(41, 95, 108);
-		}
+	.encabezado__texto {
+		height: 12vh;
+		font-family: 'Pacifico', cursive;
+		text-shadow: 2px 2px 2px rgb(41, 95, 108);
+	}
 
-		.encabezado__texto__neon {
-			animation: presentacion_neon 1s infinite;
-		}
+	.encabezado__texto__neon {
+		animation: presentacion_neon 1s infinite;
+	}
 
-		@keyframes presentacion_neon {
-			0% {text-shadow: 2px 2px 2px rgb(41, 95, 108);} 
-			100% {text-shadow: 2px 2px 2px rgb(80, 203, 232);}
-		}
+	@keyframes presentacion_neon {
+		0% {text-shadow: 2px 2px 2px rgb(41, 95, 108);} 
+		100% {text-shadow: 2px 2px 2px rgb(80, 203, 232);}
+	}
 
-		.encabezado__texto__titulo {
-			height: 4vh;
-			margin-top: 2vh;
-			margin-bottom: 0vh;
-		}
+	.encabezado__texto__titulo {
+		height: 4vh;
+		margin-top: 2vh;
+		margin-bottom: 0vh;
+	}
 
-		.encabezado__texto__parrafo {
-			margin: 0;
-			margin-top: 1rem;
-			font-weight: bold;
-			text-align: center;
-		}
-		
-		.navbar {
-			padding-top: 0px;
-			padding-bottom: 0px;
-			background-color: #121D2F !important;
-			border-bottom: 4px solid #2A9D8F;
-		}
+	.encabezado__texto__parrafo {
+		margin: 0;
+		margin-top: 1rem;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	.navbar {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		background-color: #121D2F !important;
+		border-bottom: 4px solid #2A9D8F;
+	}
 
-		.nav-link {
-			font-weight: bold;
-			color: #2A9D8F!important;
-		}
+	.nav-link {
+		font-weight: bold;
+		color: #2A9D8F!important;
+	}
 
-		.nav-link:hover {
-			color: white!important;
-		}
+	.nav-link:hover {
+		color: white!important;
+	}
 
-		.navbar-toggler {
-			color: #2A9D8F!important;
-			margin: 5px;
-		}
+	.navbar-toggler {
+		color: #2A9D8F!important;
+		margin: 5px;
+	}
 
-		.active {
-			color: white!important;
-			text-decoration: underline;
-			background-color: #121D2F;
-			border-radius: 0;
-		}
+	.active {
+		color: white!important;
+		text-decoration: underline;
+		background-color: #121D2F;
+		border-radius: 0;
+	}
 
-		.lista__icono {
-			width: 14vh;
-			height: 12vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
+	.lista__icono {
+		width: 14vh;
+		height: 12vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-		.lista__link {
-			height: 12vh;
-			display: flex;
-			justify-content: start;
-			align-items: center;
-		}
+	.lista__link {
+		height: 12vh;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+	}
 
-		.lista__icono__item {
-			height: 8vh;
-		}
+	.lista__icono__item {
+		height: 8vh;
+	}
 
-		.lista__link__item {
-			color: gray;
-			font-weight: bolder;
-			text-decoration: none;
-		}
+	.lista__link__item {
+		color: gray;
+		font-weight: bolder;
+		text-decoration: none;
+	}
 
-		main {
-			min-height: 70vh;
-		}
+	main {
+		min-height: 70vh;
+	}
 
+	.tarjetas {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card {
+		margin: 30px;
+	}
+
+	.card:hover {
+		transform: scale(1.1);
+		box-shadow: 4px 4px 4px gray;
+	}
+
+	.card-img-top {
+		border-bottom: #121D2F 1px solid;
+	}
+
+	.formulario {
+		width: 90%;
+		margin-bottom: 10px;
+	}
+
+	@media (min-width: 820px) {
 		.tarjetas {
-			display: flex;
-			flex-direction: column;
+			flex-direction: row;
 		}
 
-        .card {
-            margin: 30px;
-        }
-
-        .card:hover {
-            transform: scale(1.1);
-            box-shadow: 4px 4px 4px gray;
-        }
-
-        .card-img-top {
-            border-bottom: #121D2F 1px solid;
-        }
-
-		@media (min-width: 820px) {
-			.tarjetas {
-				flex-direction: row;
-			}
-
-			.active {			
-				background-color: #2A9D8F;	
-				text-decoration: none;
-				border-top-left-radius: 2vh;
-				border-top-right-radius: 2vh;
-			}
+		.active {			
+			background-color: #2A9D8F;	
+			text-decoration: none;
+			border-top-left-radius: 2vh;
+			border-top-right-radius: 2vh;
 		}
+
+		.formulario {
+			width: 50%;
+		}
+	}
