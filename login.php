@@ -1,13 +1,36 @@
 <?php 
-	// recibe los valores ingresados entradas del formulario
-	$usuario = (isset($_POST['usuario']))? $_POST['usuario'] : '';
-	$clave = (isset($_POST['clave']))? $_POST['clave'] : '';
+
+	#defino la variable para que exista aunque no haya envio 
+	$usuario = "";
+	$clave = "";
+	#si hubo un envio 
+	if ($_POST){
+		#si hay info asignarla, sino ""
+		if (isset($_POST['usuario'])){
+			$usuario = $_POST['usuario'];
+		} else {
+			$usuario = "";
+		}
+		#Determina si una variable está definida y no es NULL 
+		if (isset($_POST['clave'])){
+			$clave = $_POST['clave'];
+		}else{
+			$clave = "";
+		}
 	
-	// chequea si el usuario y la clave ingresados son los del administrador
-	if($usuario == 'admin' && $clave == '123') {
-		echo 'usuario logeado';
-		
-	}
+		#chequea si el usuario y la clave ingresados son los del administrador
+		if($usuario == 'admin' && $clave == '123') {
+			#las variables que vamos a guardar en estas variables van a poder mantenerte en todas las paginas del sitio web
+			session_start();
+			
+			#se loguea el usuario y mantenemos el usuario en toda la pagina 
+			#declaro variables de tipo sesiones, puedo guardar varias variables con el tipo de dato que necesito 
+			$_SESSION["usuario"]=$usuario;
+			$_SESSION["estado"]="logueado";
+
+			echo $_SESSION["usuario"]." ".$_SESSION["estado"];
+		}
+	}	
 ?>
 <!doctype html>
 <html lang="es">
