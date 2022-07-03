@@ -1,21 +1,64 @@
 <?php require_once 'header.php'; ?>
-<h2>Paginas</h2>
-<div class="tarjetas">
-  <div class="card" style="width: 18rem;">
-    <img src="img/codo_a_codo.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Proyecto Codo a Codo</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="img/codo_a_codo.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Portfolio Carlos Mansilla</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
+<h2 class="mb-5">Conocimientos</h2>
+<ul>
+	<li class="mb-5">
+	<h5>Estudios:</h5> 
+	<ul class="list-group">
+		<li class="list-group-item d-flex justify-content-start align-items-center">
+			<div class="lista__icono"><img src="img/unrc.png" class="lista__icono__item" alt="unrc"></div> 
+			<div class="lista__link"><a href="https://www.unrc.edu.ar/" class="lista__link__item" target="_blank">Analista en Computacion</a></div>  
+		</li>
+		<li class="list-group-item d-flex justify-content-start align-items-center"> 
+			<div class="lista__icono"><img src="img/codoacodo.png" class="lista__icono__item" alt="codo a codo"></div> 
+			<div class="lista__link"><a href="https://codoacodo.bue.edu.ar/" class="lista__link__item" target="_blank">Curso Full Stack PHP Jr</a></div>  
+		</li>
+	</ul>
+	</li>
+	<li class="mb-5">
+		<h5>Lenguajes y Frameworks:</h5> 
+		<ul class="list-group">
+			<li class="list-group-item d-flex justify-content-start align-items-center">
+				<div class="lista__icono"><img src="img/html.jpg" class="lista__icono__item" alt="html"></div> 
+				<div class="lista__link"><a href="https://www.w3schools.com/html/" class="lista__link__item" target="_blank">Html</a></div>
+			</li>
+			<li class="list-group-item d-flex justify-content-start align-items-center"> 
+				<div class="lista__icono"><img src="img/css.jpg" class="lista__icono__item" alt="css"></div> 
+				<div class="lista__link"><a href="https://www.w3schools.com/css/" class="lista__link__item" target="_blank">Css</a></div>
+			</li> 
+			<li class="list-group-item d-flex justify-content-start align-items-center"> 
+				<div class="lista__icono"><img src="img/js.jpg" class="lista__icono__item" alt="javascript"></div>  
+				<div class="lista__link"><a href="https://www.w3schools.com/js/" class="lista__link__item" target="_blank">Javascript</a></div> 
+			</li>
+			<li class="list-group-item d-flex justify-content-start align-items-center"> 
+				<div class="lista__icono"><img src="img/bootstrap.png" class="lista__icono__item" alt="bootstrap"></div>  
+				<div class="lista__link"><a href="https://getbootstrap.com/" class="lista__link__item" target="_blank">Bootstrap</a></div>  
+			</li>
+			<li class="list-group-item d-flex justify-content-start align-items-center"> 
+				<div class="lista__icono"><img src="img/maria_db.png" class="lista__icono__item" alt="maria db"></div>  
+				<div class="lista__link"><a href="https://www.w3schools.com/sql/" class="lista__link__item" target="_blank">MariaDB(SQL)</a></div> 
+			</li>
+			<li class="list-group-item d-flex justify-content-start align-items-center"> 
+				<div class="lista__icono"><img src="img/php.png" class="lista__icono__item" alt="php"></div>  
+				<div class="lista__link"><a href="https://www.php.net/manual/es/intro-whatis.php" class="lista__link__item" target="_blank">PHP</a></div> 
+			</li>		
+		</ul>
+	</li>
+	<li class="mb-5">
+		<h5>Herramientas:</h5> 
+		<ul class="list-group">
+			<li class="list-group-item d-flex justify-content-start align-items-center"> 
+				<div class="lista__icono"><img src="img/visual_studio_code.png" class="lista__icono__item" alt="visual studio code"></div> 
+				<div class="lista__link"><a href="https://code.visualstudio.com/"  class="lista__link__item" target="_blank">Visual Studio Code</a></div> 
+			</li>
+			<li class="list-group-item d-flex justify-content-start align-items-center"> 
+				<div class="lista__icono"><img src="img/xampp.png" class="lista__icono__item" alt="xampp"></div> 
+				<div class="lista__link"><a href="https://www.apachefriends.org/download.html"  class="lista__link__item" target="_blank">Xampp</a></div> 
+			</li>
+			<li class="list-group-item d-flex justify-content-start align-items-center"> 
+				<div class="lista__icono"><img src="img/git.png" class="lista__icono__item" alt="git"></div> 
+				<div class="lista__link"><a href="https://git-scm.com/"  class="lista__link__item" target="_blank">Git</a></div> 
+			</li>	
+		</ul>
+	</li>
+</ul>
 <?php require_once 'footer.php'; ?>

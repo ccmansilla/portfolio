@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel=“shortcut icon” type=“image/x-icon” href="img/favicon.ico">
+	<link rel="icon" type="image/png" href="img/icon.png">
     <title>CM</title>
 	<link rel="stylesheet" href="css/style.css">
   </head>
@@ -31,7 +31,10 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			  <div class="navbar-nav d-flex justify-content-around w-100">
 				<div class="nav-item">
-				  <a class="nav-link active" aria-current="page" href="index.php">Paginas</a>
+				  <a class="nav-link active" href="index.php">Conocimientos</a>
+				</div>
+				<div class="nav-item">
+				  <a class="nav-link" href="pages.php">Paginas</a>
 				</div>
 				<div class="nav-item">
 				  <a class="nav-link" href="contact.php">Contacto</a>
