@@ -31,13 +31,13 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			  <div class="navbar-nav d-flex justify-content-around w-100">
 				<div class="nav-item">
-				  <a class="nav-link active" href="index.php">Conocimientos</a>
+				  <a class="nav-link <?php echo ($active == 'index.php')? 'active' : '' ?>" href="index.php">Conocimientos</a>
 				</div>
 				<div class="nav-item">
-				  <a class="nav-link" href="pages.php">Paginas</a>
+				  <a class="nav-link <?php echo ($active == 'pages.php')? 'active' : '' ?>" href="pages.php">Paginas</a>
 				</div>
 				<div class="nav-item">
-				  <a class="nav-link" href="contact.php">Contacto</a>
+				  <a class="nav-link <?php echo ($active == 'contact.php')? 'active' : '' ?>" href="contact.php">Contacto</a>
 				</div>
 			  </div>
 			</div>

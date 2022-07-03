@@ -1,3 +1,4 @@
+<?php $active = "pages.php"; ?>
 <?php require_once 'header.php'; ?>
 <h2>Paginas</h2>
 <div class="tarjetas">

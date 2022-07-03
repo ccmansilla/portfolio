@@ -1,3 +1,4 @@
+<?php $active = "index.php"; ?>
 <?php require_once 'header.php'; ?>
 
 	<h2>Estudios</h2> 
