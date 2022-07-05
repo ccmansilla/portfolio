@@ -130,6 +130,12 @@
 		margin-bottom: 10px;
 	}
 
+	.iframe__size { 
+		width: 400px;
+		height: 320px; 
+		border: 0; 
+	}
+
 	@media (min-width: 820px) {
 		.tarjetas {
 			flex-direction: row;
@@ -144,5 +150,10 @@
 
 		.formulario {
 			width: 50%;
+		}
+
+		.iframe__size {
+			width: 600px;
+			height: 450px; 
 		}
 	}
