@@ -16,7 +16,7 @@
             <label class="form-label" for="mensaje">Mensaje:</label> <br>
             <textarea  class="form-control" name="mensaje" id="mensaje" cols="60" rows="10" required></textarea>
             <br>
-            <input type="submit" class="btn btn-primary" value="Enviar">
+            <input type="submit" class="btn btn-success" value="Enviar">
             <br>
     </form>
 </div>

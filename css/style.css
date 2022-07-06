@@ -58,6 +58,11 @@
 		border-bottom: 4px solid #2A9D8F;
 	}
 
+	.navbar-brand {
+		color: #2A9D8F !important;
+		font-weight: bolder;
+	}
+
 	.nav-link {
 		font-weight: bold;
 		color: #2A9D8F!important;
@@ -75,8 +80,6 @@
 	.active {
 		color: white!important;
 		text-decoration: underline;
-		background-color: #121D2F;
-		border-radius: 0;
 	}
 
 	.lista__icono {
@@ -140,13 +143,6 @@
 	@media (min-width: 820px) {
 		.tarjetas {
 			flex-direction: row;
-		}
-
-		.active {			
-			background-color: #2A9D8F;	
-			text-decoration: none;
-			border-top-left-radius: 2vh;
-			border-top-right-radius: 2vh;
 		}
 
 		.formulario {
