@@ -5,3 +5,9 @@ body {
     background-size: cover;
     color: white;
 }
+
+.form-login {
+    margin-top: 20vh;
+    padding: 20px;
+    background-color: rgba(55, 55, 55, 0.7);
+}
