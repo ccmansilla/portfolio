@@ -1,11 +1,8 @@
 <?php $active = "contact.php"; ?>
 <?php require_once 'header.php'; ?>
 <div class="content__centrado">
-<h2 class="section__subtitle">Ubicacion Las Higueras, Río Cuarto, Córdoba</h2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13370.767031184434!2d-64.29426957457493!3d-33.0908931166045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cdfe5393651ee1%3A0x9dbd07aa672c0ef4!2sLas%20Higueras%2C%20R%C3%ADo%20Cuarto%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1656859862537!5m2!1ses-419!2sar" class="iframe__size" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<br/>
-<br/>
-<h2 class="section__subtitle">Enviame un mensaje</h2>
+<h2 class="section__subtitle">Mensaje</h2>
+<br>
 <div class="formulario">        
     <form class="section__form" action="">
             <label class="form-label" for="nombre">Nombre:</label>

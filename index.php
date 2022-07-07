@@ -2,6 +2,7 @@
 <?php require_once 'header.php'; ?>
 <div class="content__centrado">
 	<h2>Estudios</h2> 
+	<br>
 	<ul class="list-group">
 		<li class="list-group-item d-flex justify-content-start align-items-center">
 			<div class="lista__icono"><img src="img/unrc.png" class="lista__icono__item" alt="unrc"></div> 
@@ -15,6 +16,7 @@
 	<br/>
 	<br/>
 	<h2>Lenguajes y Frameworks</h2> 
+	<br>
 	<ul class="list-group">
 		<li class="list-group-item d-flex justify-content-start align-items-center">
 			<div class="lista__icono"><img src="img/html.jpg" class="lista__icono__item" alt="html"></div> 
@@ -44,6 +46,7 @@
 	<br/>
 	<br/>
 	<h2>Herramientas</h2> 
+	<br>
 	<ul class="list-group">
 		<li class="list-group-item d-flex justify-content-start align-items-center"> 
 			<div class="lista__icono"><img src="img/visual_studio_code.png" class="lista__icono__item" alt="visual studio code"></div> 

@@ -138,13 +138,11 @@
 
 	.formulario {
 		width: 400px;
+		padding: 20px;
+		border: 1px solid #d5dbde;
+		background-color: #fff;
+		border-radius: 0.25rem;
 		margin-bottom: 10px;
-	}
-
-	.iframe__size { 
-		width: 400px;
-		height: 320px; 
-		border: 0; 
 	}
 
 	@media (min-width: 820px) {
@@ -155,11 +153,6 @@
 
 		.tarjetas {
 			flex-direction: row;
-		}
-
-		.iframe__size {
-			width: 600px;
-			height: 450px; 
 		}
 
 		.formulario {
