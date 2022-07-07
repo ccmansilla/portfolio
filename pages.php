@@ -7,7 +7,7 @@
     <div class="card-body">
       <h5 class="card-title">Proyecto Codo a Codo</h5>
       <p class="card-text">Pagina trabajo final frontend del curso de Fullstack Php del programa Codo a Codo de la Ciudad de Buenos Aires.</p>
-      <a href="https://ccmansilla.github.io/ciudad_bsas/" class="btn btn-primary" target="_blank">Abrir Pagina</a>
+      <a href="https://ccmansilla.github.io/ciudad_bsas/" class="btn btn-success" target="_blank">Abrir Pagina</a>
     </div>
   </div>
   <div class="card" style="width: 18rem;">
@@ -15,7 +15,7 @@
     <div class="card-body">
       <h5 class="card-title">Pagina</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-success">Abrir Pagina</a>
     </div>
   </div>
   <div class="card" style="width: 18rem;">
@@ -23,7 +23,7 @@
     <div class="card-body">
       <h5 class="card-title">Pagina</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-success">Abrir Pagina</a>
     </div>
   </div>
 </div>
@@ -34,7 +34,7 @@
     <div class="card-body">
       <h5 class="card-title">Proyecto Codo a Codo</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-success">Abrir Pagina</a>
     </div>
   </div>
   <div class="card" style="width: 18rem;">
@@ -42,7 +42,7 @@
     <div class="card-body">
       <h5 class="card-title">Pagina</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-success">Abrir Pagina</a>
     </div>
   </div>
   <div class="card" style="width: 18rem;">
@@ -50,7 +50,7 @@
     <div class="card-body">
       <h5 class="card-title">Pagina</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-success">Abrir Pagina</a>
     </div>
   </div>
 </div>
