@@ -1,6 +1,6 @@
 <?php $active = "index.php"; ?>
 <?php require_once 'header.php'; ?>
-
+<div class="content__centrado">
 	<h2>Estudios</h2> 
 	<ul class="list-group">
 		<li class="list-group-item d-flex justify-content-start align-items-center">
@@ -59,5 +59,6 @@
 		</li>	
 	</ul>
 	<br/>
-	<br/>
+	<br/>	
+</div>
 <?php require_once 'footer.php'; ?>

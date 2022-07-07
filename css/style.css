@@ -113,6 +113,11 @@
 		min-height: 70vh;
 	}
 
+	.content__centrado {
+		width: 400px;
+		margin: auto;
+	}
+
 	.tarjetas {
 		display: flex;
 		flex-direction: column;
@@ -132,7 +137,7 @@
 	}
 
 	.formulario {
-		width: 90%;
+		width: 400px;
 		margin-bottom: 10px;
 	}
 
@@ -143,16 +148,21 @@
 	}
 
 	@media (min-width: 820px) {
-		.tarjetas {
-			flex-direction: row;
+		.content__centrado {
+			width: 600px;
+			margin: auto;
 		}
 
-		.formulario {
-			width: 50%;
+		.tarjetas {
+			flex-direction: row;
 		}
 
 		.iframe__size {
 			width: 600px;
 			height: 450px; 
+		}
+
+		.formulario {
+			width: 600px;
 		}
 	}
