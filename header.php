@@ -18,13 +18,13 @@
 			<img src="img/foto.jpeg" class="encabezado__image" alt="Carlos Mansilla"/>
 		</div>
 		<div class="encabezado__texto encabezado__texto__neon ps-3">
-			<h2 class="encabezado__texto__titulo">Carlos Mansilla</h2>
+			<h1 class="encabezado__texto__titulo">Carlos Mansilla</h1>
 			<p class="encabezado__texto__parrafo">Desarrollador Web</p>
 		</div>
 	  </div>
 	  <nav class="navbar navbar-dark bg-dark navbar-expand-lg px-5">
 		  <div class="container-fluid">
-			<a class="navbar-brand py-0" href="index.php"> Portfolio CM> </a>
+			<a class="navbar-brand py-0" href="index.php"> Portfolio> </a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>

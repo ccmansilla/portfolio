@@ -1,5 +1,5 @@
-	@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-	
+	@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
 	body {
 		background-image: url(../img/background.jpg);
 	}
@@ -25,7 +25,7 @@
 
 	.encabezado__texto {
 		height: 12vh;
-		font-family: 'Pacifico', cursive;
+		font-family: 'Caveat', cursive;
 		text-shadow: 2px 2px 2px rgb(41, 95, 108);
 	}
 
@@ -39,9 +39,10 @@
 	}
 
 	.encabezado__texto__titulo {
-		height: 4vh;
-		margin-top: 2vh;
+		height: 2.5vh;
+		margin-top: 1vh;
 		margin-bottom: 0vh;
+		font-size: 2.2rem;
 	}
 
 	.encabezado__texto__parrafo {
@@ -49,6 +50,7 @@
 		margin-top: 1rem;
 		font-weight: bold;
 		text-align: center;
+		font-size: 1.3rem;
 	}
 	
 	.navbar {
