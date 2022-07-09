@@ -27,10 +27,12 @@
 			#declaro variables de tipo sesiones, puedo guardar varias variables con el tipo de dato que necesito 
 			$_SESSION["usuario"]=$usuario;
 			$_SESSION["estado"]="logueado";
-
-			echo $_SESSION["usuario"]." ".$_SESSION["estado"];
-		}
-	}	
+			#redirecciono porque ingreso ok 
+			header("location:index_admin.php");
+        } else {
+            echo '<script> alert("Usuario y/o Contraseña incorrecta");</script>';
+        }
+	}
 ?>
 <!doctype html>
 <html lang="es">
