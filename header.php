@@ -15,7 +15,7 @@
   <header>
 	  <div class="encabezado d-flex justify-content-center align-items-end py-3">
 		<div>
-			<img src="img/foto.jpeg" class="encabezado__image" alt="Carlos Mansilla"/>
+			<img src="img/foto.jpg" class="encabezado__image" alt="Carlos Mansilla"/>
 		</div>
 		<div class="encabezado__texto encabezado__texto__neon ps-3">
 			<h1 class="encabezado__texto__titulo">Carlos Mansilla</h1>
@@ -38,6 +38,9 @@
 				</div>
 				<div class="nav-item">
 				  <a class="nav-link <?php echo ($active == 'contact.php')? 'active' : '' ?>" href="contact.php">Contacto</a>
+				</div>
+				<div class="nav-item">
+				  <a class="nav-link" href="admin/index.php">Admin</a>
 				</div>
 			  </div>
 			</div>

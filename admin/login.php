@@ -28,7 +28,7 @@
 			$_SESSION["usuario"]=$usuario;
 			$_SESSION["estado"]="logueado";
 			#redirecciono porque ingreso ok 
-			header("location:index_admin.php");
+			header("location:index.php");
         } else {
             echo '<script> alert("Usuario y/o Contraseña incorrecta");</script>';
         }
@@ -43,8 +43,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style_admin.css">
-	<link rel="icon" type="image/png" href="img/icon.png">
+	<link rel="stylesheet" href="../css/style_admin.css">
+	<link rel="icon" type="image/png" href="../img/icon.png">
     <title>CM</title>
   </head>
   <body>

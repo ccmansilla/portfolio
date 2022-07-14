@@ -1,8 +1,10 @@
 <?php $active = "contact.php"; ?>
 <?php require_once 'header.php'; ?>
 <div class="content__centrado">
-<h2 class="section__subtitle">Mensaje</h2>
-<br>
+<div class="d-flex justify-content-start align-items-center"> 
+    <div class="lista__icono"><img src="img/mensaje.png" class="lista__icono__item" alt="mensaje"></div>  
+    <div class="lista__link"><h2>Mensaje</h2></div> 
+</div>
 <div class="formulario">        
     <form class="section__form" action="">
             <label class="form-label" for="nombre">Nombre:</label>
