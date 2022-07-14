@@ -7,7 +7,7 @@
  #vamos a consultar para llenar la tabla 
  $conexion = new Conexion();# es un objeto de tipo conexion,
  
- $proyectos= $conexion->consultar("SELECT * FROM `paginas`");
+ $proyectos= $conexion->consultar("SELECT * FROM `proyectos`");
  #comprobamos que la info este en forma de arreglo
  #print_r($resultado);
 
@@ -16,10 +16,10 @@
 
     
 <!--bs5 jum-->
-<div class="p-5 bg-light">
+<div class="p-5 bg-light mb-5">
     <div class="container">
         <h1 class="display-3">Bienvenido</h1>
-        <p class="lead">Portfolio de ...</p>
+        <p class="lead">Portfolio de Carlos Mansilla</p>
         <hr class="my-2">
         <p>Más Información</p>
        
@@ -36,7 +36,7 @@
             <img class="card-img-top" width="100" src="imagenes/<?php echo $proyecto['imagen'];?>" alt="">
            
             <div class="card-body">
-            <h5 class="card-title"><?php echo $proyecto['titulo'];?></h5>
+            <h5 class="card-title"><?php echo $proyecto['nombre'];?></h5>
             <p class="card-text"><?php echo $proyecto['descripcion'];?></p>
             </div>
           

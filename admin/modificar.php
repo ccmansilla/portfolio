@@ -25,7 +25,7 @@ if($_POST){
     #creamos una variable fecha para concatenar al nombre de la imagen, para que cada imagen sea distinta y no se pisen 
     $fecha = new DateTime();
     $imagen= $fecha->getTimestamp()."_".$imagen;
-    move_uploaded_file($imagen_temporal,"imagenes/".$imagen);
+    move_uploaded_file($imagen_temporal,"../upload/".$imagen);
    
     $id = $_SESSION['id_proyecto'];
     #creo una instancia(objeto) de la clase de conexion

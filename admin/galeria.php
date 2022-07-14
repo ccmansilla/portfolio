@@ -16,7 +16,7 @@
     #creamos una variable fecha para concatenar al nombre de la imagen, para que cada imagen sea distinta y no se pisen 
     $fecha = new DateTime();
     $imagen= $fecha->getTimestamp()."_".$imagen;
-    move_uploaded_file($imagen_temporal,"imagenes/".$imagen);
+    move_uploaded_file($imagen_temporal,"../upload/".$imagen);
    
     #creo una instancia(objeto) de la clase de conexion
     $conexion = new conexion();
@@ -37,7 +37,7 @@
         #recuperamos la imagen de la base antes de borrar 
         $imagen = $conexion->consultar("select imagen FROM  `proyectos` where id=".$id);
         #la borramos de la carpeta 
-        unlink("imagenes/".$imagen[0]['imagen']);
+        unlink("../upload/".$imagen[0]['imagen']);
 
         #borramos el registro de la base 
         $sql ="DELETE FROM `proyectos` WHERE `proyectos`.`id` =".$id; 
@@ -67,31 +67,31 @@
 <!--ya tenemos un container en el header que cierra en el footer-->
 
     <div class="row d-flex justify-content-center mb-5">
-        <div class="col-md-10 col-sm-12">
-            <div class="color card">
-                <div class="card-header">
-                    Datos del Proyecto
+        <div class="col-md-6 col-sm-8">
+            <div class="form">
+                <div class="">
+                    Proyecto
                 </div>
-                <div class="card-body">
+                <div class="">
                     <!--para recepcionar archivos uso enctype-->
                     <form action="galeria.php" method="post" enctype="multipart/form-data">
                         <div>
-                            <label for="nombre">Nombre del Proyecto</label>
+                            <label for="nombre">Nombre:</label>
                             <input required class="form-control" type="text" name="nombre" id="nombre">
                         </div>
                     
                         <div>
-                            <label for="archivo">Imagen del Proyecto</label>
+                            <label for="archivo">Imagen:</label>
                             <input required class="form-control" type="file" name ="archivo" id="archivo">
                         </div>
                         <br>
                         <div>
-                            <label for="descripcion">Indique Descripción del Proyecto</label>
+                            <label for="descripcion">Descripción:</label>
                             <textarea required class="form-control" name="descripcion" id="descripcion" cols="30" rows="4"></textarea>
                         </div>
                         <div>
                         <br>
-                        <input class="btn btn-success" type="submit" value="Enviar Proyecto">
+                        <input class="btn btn-success" type="submit" value="Enviar">
                         </div>
                 
                     </form>
@@ -121,7 +121,7 @@
                         <tr >
                             <!--<td scope="row"><?php #echo $proyecto['id'];?></td> -->
                             <td><?php echo $proyecto['nombre'];?></td>
-                            <td> <img width="100" src="imagenes/<?php echo $proyecto['imagen'];?>" alt="">  </td>
+                            <td> <img width="100" src="../upload/<?php echo $proyecto['imagen'];?>" alt="">  </td>
                             <td class="texto"><?php echo $proyecto['descripcion'];?></td>
                             <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?php echo $proyecto['id'];?>">Eliminar</a></td>
                             <td><a name="modificar" id="modificar" class="btn btn-warning" href="?modificar=<?php echo $proyecto['id'];?>">Modificar</a></td>

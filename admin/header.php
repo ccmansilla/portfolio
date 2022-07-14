@@ -23,40 +23,19 @@
    
      <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <link rel="stylesheet" href="estilo.css">
+     <link rel="stylesheet" href="../css/style_admin.css">
     
      <title>Portfolio</title>
      <style>
-             .tabla{
-                background-color: rgb(189, 189, 189)!important;
-                }
-            .color{
-                background-color: rgb(189, 189, 189)!important;
-                
-            }
-
-
-            @media screen and (max-width: 800px) {
             
-                .tabla{
-                    width: 80%!important;
-                    font-size: 0.8em!important;
-                    background-color: white!important;
-                }
-                .texto{
-                    
-                    text-overflow: clip!important;
-
-                }
-            }
                     
      </style>
 </head>
 <body>
-<div class="container-fluid mt-5">
+<div class="container-fluid m-0 px-0">
 
 
-   <nav class="navbar navbar-expand-md navbar-light bg-light">
+   <nav class="navbar navbar-expand-md mx-0 navbar-dark bg-dark">
         <div class="container-fluid">
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,10 +44,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="index_admin.php">Ver proyectos</a>
+                    <a class="nav-link active" aria-current="page"  href="index.php">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="galeria.php">Abm</a>
+                    <a class="nav-link active" aria-current="page"  href="galeria.php">Gestionar</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link active" href="cerrar.php"><span>Usuario: <?php echo $_SESSION['usuario'] ?> </span>  Cerrar Sesión</a> 

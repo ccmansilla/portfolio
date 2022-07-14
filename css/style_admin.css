@@ -3,11 +3,34 @@ body {
     background-image: url("../img/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
 }
 
-.form-login {
-    margin-top: 20vh;
+.form {
     padding: 20px;
-    background-color: rgba(55, 55, 55, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: bold;
+}
+
+.tabla{
+    background-color: rgb(189, 189, 189)!important;
+    }
+.color{
+    background-color: rgb(189, 189, 189)!important;
+    
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .tabla{
+        width: 80%!important;
+        font-size: 0.8em!important;
+        background-color: white!important;
+    }
+    .texto{
+        
+        text-overflow: clip!important;
+
+    }
 }
