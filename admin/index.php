@@ -14,18 +14,6 @@
 
 ?>
 
-
-    
-<!--bs5 jum-->
-<div class="p-5 color mb-5">
-    <div class="container">
-        <h1 class="display-3">Bienvenido</h1>
-        <p class="lead">Portfolio de Carlos Mansilla</p>
-        <hr class="my-2">
-        <p>Más Información</p>
-    </div>
-</div>
-
 <main class="container py-5">
     <div class ="row row-cols-1 row-cols-md-3 g-4">
     <?php #leemos proyectos 1 por 1

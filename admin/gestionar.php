@@ -44,7 +44,7 @@
         $id_proyecto = $conexion->ejecutar($sql);
 
         #para que no intente borrar muchas veces
-         header("location:galeria.php");
+         header("location:gestionar.php");
    }
 
    if(isset($_GET['modificar'])){
@@ -74,7 +74,7 @@
                 </div>
                 <div class="card-body">
                     <!--para recepcionar archivos uso enctype-->
-                    <form action="galeria.php" method="post" enctype="multipart/form-data">
+                    <form action="gestionar.php" method="post" enctype="multipart/form-data">
                         <div>
                             <label for="nombre">Nombre:</label>
                             <input required class="form-control" type="text" name="nombre" id="nombre">
