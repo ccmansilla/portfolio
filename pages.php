@@ -1,58 +1,31 @@
+<?php require_once 'admin/conexion.php'; ?>
+
+<?php 
+
+  #mostrar datos 
+  #vamos a consultar para llenar la tabla 
+  $conexion = new Conexion();
+  $proyectos= $conexion->consultar("SELECT * FROM `proyectos`");
+  #comprobamos que la info este en forma de arreglo
+  #print_r($resultado);
+
+?>
 <?php $active = "pages.php"; ?>
 <?php require_once 'header.php'; ?>
 <h2>Paginas</h2>
-<div class="tarjetas">
-  <div class="card" style="width: 18rem;">
-    <img src="img/codo_a_codo.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Proyecto Codo a Codo</h5>
-      <p class="card-text">Pagina trabajo final frontend del curso de Fullstack Php del programa Codo a Codo de la Ciudad de Buenos Aires.</p>
-      <a href="https://ccmansilla.github.io/ciudad_bsas/" class="btn btn-success" target="_blank">Abrir Pagina</a>
+<div class ="row row-cols-1 row-cols-md-3 g-4">
+  <?php #leemos proyectos 1 por 1
+  foreach($proyectos as $proyecto){ ?>
+    <div class="col">
+      <div class="card border border-1 shadow">
+        <img class="card-img-top" width="100" src="upload/<?php echo $proyecto['imagen'];?>" alt="">
+        <div class="card-body">
+          <h5 class="card-title text-dark"><?php echo $proyecto['nombre'];?></h5>
+          <p class="card-text text-dark"><?php echo $proyecto['descripcion'];?></p>
+          <a href="" class="btn btn-success" target="_blank">Abrir Pagina</a>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="img/code.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Pagina</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-success">Abrir Pagina</a>
-    </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="img/code.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Pagina</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-success">Abrir Pagina</a>
-    </div>
-  </div>
-</div>
-</div>
-<div class="tarjetas">
-  <div class="card" style="width: 18rem;">
-    <img src="img/code.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Proyecto Codo a Codo</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-success">Abrir Pagina</a>
-    </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="img/code.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Pagina</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-success">Abrir Pagina</a>
-    </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="img/code.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Pagina</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-success">Abrir Pagina</a>
-    </div>
-  </div>
-</div>
+  <?php } ?>
 </div>
 <?php require_once 'footer.php'; ?>

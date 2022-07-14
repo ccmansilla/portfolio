@@ -32,8 +32,7 @@
  foreach($proyectos as $proyecto){ ?>
     <div class="col">
         <div class="card">
-            <img class="card-img-top" width="100" src="imagenes/<?php echo $proyecto['imagen'];?>" alt="">
-           
+            <img class="card-img-top" width="100" src="../upload/<?php echo $proyecto['imagen'];?>" alt="">
             <div class="card-body">
             <h5 class="card-title"><?php echo $proyecto['nombre'];?></h5>
             <p class="card-text"><?php echo $proyecto['descripcion'];?></p>
