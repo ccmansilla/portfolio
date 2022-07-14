@@ -1,3 +1,4 @@
+<?php $active = "gestionar.php"; ?>
 <?php include 'header.php'; ?>
 <?php 
 
@@ -8,7 +9,7 @@ if($_GET){
        
         $_SESSION['id_proyecto'] = $id;
         #vamos a consultar para llenar la tabla 
-        $conexion = new conexion();
+        $conexion = new Conexion();
         $proyecto= $conexion->consultar("SELECT * FROM `proyectos` where id=".$id);
      
     }
@@ -29,18 +30,19 @@ if($_POST){
    
     $id = $_SESSION['id_proyecto'];
     #creo una instancia(objeto) de la clase de conexion
-    $conexion = new conexion();
+    $conexion = new Conexion();
     $sql="INSERT INTO `proyectos` (`id`, `nombre`, `imagen`, `descripcion`) VALUES (NULL, '$nombre_proyecto' , '$imagen', '$descripcion')";
     $sql = "UPDATE `proyectos` SET `nombre` = '$nombre_proyecto' , `imagen` = '$imagen', `descripcion` = '$descripcion' WHERE `proyectos`.`id` = '$id';";
     $id_proyecto = $conexion->ejecutar($sql);
 
-    header("location:galeria.php");
+    header("location:gestionar.php");
 
 }
 ?>
+<main class="container py-5">
 <?php #leemos proyectos 1 por 1
   foreach($proyecto as $fila){ ?>
-    <div class="row d-flex justify-content-center mt-5">
+    <div class="row d-flex justify-content-center">
             <div class="col-md-6 col-sm-8">
                 <div class="card color">
                     <div class="card-header">
@@ -77,5 +79,5 @@ if($_POST){
         </div><!--cierra el row-->
         <?php #cerramos la llave del foreach
                         } ?>
-
+</main>
 <?php include 'footer.php'; ?>

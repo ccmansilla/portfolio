@@ -67,7 +67,7 @@
 		</div>
 	  </div>
 	  <div class="d-flex justify-content-center mb-3">
-	  	<button type="submit" id='booton' class="btn btn-primary">Ingresar</button>
+	  	<button type="submit" id='booton' class="btn btn-success">Ingresar</button>
 	  </div>
 	</form>
 	</div>

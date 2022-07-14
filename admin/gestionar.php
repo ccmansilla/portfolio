@@ -1,6 +1,6 @@
+<?php $active = "gestionar.php"; ?>
 <?php include 'header.php'; ?>
 <?php include 'conexion.php'; ?>
-
 
 <?php 
 
@@ -65,8 +65,8 @@
 ?>
 
 <!--ya tenemos un container en el header que cierra en el footer-->
-
-    <div class="row d-flex justify-content-center my-5">
+<main class="container py-5">
+    <div class="row d-flex justify-content-center mb-5">
         <div class="col-md-6 col-sm-8">
             <div class="card color">
                 <div class="card-header">
@@ -134,5 +134,5 @@
             </div><!--cierra el col-->  
         </div>
     </div>
-   
+</main>
 <?php include 'footer.php'; ?>

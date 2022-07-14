@@ -1,8 +1,17 @@
 body {
-    background-color: #010014;
-    background-image: url("../img/fondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../img/background.jpg);
+}
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #121D2F !important;
+    border-bottom: 4px solid #2A9D8F;
+}
+
+.navbar-brand {
+    color: #2A9D8F !important;
+    font-weight: bolder;
 }
 
 .nav-link {
@@ -12,6 +21,16 @@ body {
 
 .nav-link:hover {
     color: white!important;
+}
+
+.active {
+    color: white!important;
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    color: #2A9D8F!important;
+    margin: 5px;
 }
 
 .form {

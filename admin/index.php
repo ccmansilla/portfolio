@@ -1,3 +1,4 @@
+<?php $active = "index.php"; ?>
 <?php include 'header.php'; ?>
 <?php include 'conexion.php'; ?>
 
@@ -25,23 +26,21 @@
     </div>
 </div>
 
-
-<div class ="row row-cols-1 row-cols-md-3 g-4">
-
-<?php #leemos proyectos 1 por 1
- foreach($proyectos as $proyecto){ ?>
-    <div class="col">
-        <div class="card">
+<main class="container py-5">
+    <div class ="row row-cols-1 row-cols-md-3 g-4">
+    <?php #leemos proyectos 1 por 1
+    foreach($proyectos as $proyecto){ ?>
+        <div class="col">
+        <div class="card border border-1 shadow">
             <img class="card-img-top" width="100" src="../upload/<?php echo $proyecto['imagen'];?>" alt="">
             <div class="card-body">
-            <h5 class="card-title"><?php echo $proyecto['nombre'];?></h5>
-            <p class="card-text"><?php echo $proyecto['descripcion'];?></p>
+            <h5 class="card-title text-dark"><?php echo $proyecto['nombre'];?></h5>
+            <p class="card-text text-dark"><?php echo $proyecto['descripcion'];?></p>
+            <a href="" class="btn btn-success" target="_blank">Abrir Pagina</a>
             </div>
-          
         </div>
-    
+        </div>
+    <?php } ?>
     </div>
- <?php } ?>
-</div>
-
+</main>
 <?php include 'footer.php'; ?>
