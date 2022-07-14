@@ -5,8 +5,10 @@
    # print_r($_SESSION);
 
     #si esta logueado lo dejo trabajar y sino lo mando al login de nuevo 
-    if ( isset( $_SESSION['usuario'] )!='admin'  ){
+    if ( isset( $_SESSION['usuario'] )!='administrador'  ){
         header("location:login.php");
+        
+
     }
 
 ?>
@@ -52,23 +54,29 @@
 </head>
 <body>
 <div class="container-fluid mt-5">
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-        <div class="container-fluid mt-5">
-        
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+   <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index_admin.php">Ver Proyectos</a> |
+                    <a class="nav-link active" aria-current="page"  href="index_admin.php">Ver proyectos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="galeria.php">ABM</a>
+                    <a class="nav-link active" aria-current="page"  href="galeria.php">Abm</a>
                     </li>
                     <li class="nav-item">
-                    
-                      <a class="nav-link" href="cerrar.php"><span class="bg-dark">Usuario: <?php echo $_SESSION['usuario'] ?> </span>  Cerrar Sesión</a> 
+                    <a class="nav-link active" href="cerrar.php"><span>Usuario: <?php echo $_SESSION['usuario'] ?> </span>  Cerrar Sesión</a> 
                     </li>
+                
                 </ul>
-        
+            
             </div>
         </div>
     </nav>
+   
