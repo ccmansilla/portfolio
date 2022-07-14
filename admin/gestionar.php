@@ -91,7 +91,7 @@
                         </div>
                         <div>
                         <br>
-                        <input class="btn btn-success" type="submit" value="Nuevo">
+                        <input class="btn btn-success" type="submit" value="Agregar">
                         </div>
                 
                     </form>
@@ -110,8 +110,8 @@
                             <th>Nombre</th>
                             <th>Imagen</th>
                             <th>Descripcion</th>
-                            <th>Eliminar</th>
-                            <th>Modificar</th>
+                            <th></th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody >
@@ -123,7 +123,7 @@
                             <td><?php echo $proyecto['nombre'];?></td>
                             <td> <img width="100" src="../upload/<?php echo $proyecto['imagen'];?>" alt="">  </td>
                             <td class="texto"><?php echo $proyecto['descripcion'];?></td>
-                            <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?php echo $proyecto['id'];?>">Eliminar</a></td>
+                            <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?php echo $proyecto['id'];?>">Borrar</a></td>
                             <td><a name="modificar" id="modificar" class="btn btn-warning" href="?modificar=<?php echo $proyecto['id'];?>">Modificar</a></td>
                         </tr>
 
