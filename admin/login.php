@@ -50,7 +50,7 @@
   <body>
 	<div class="container d-flex justify-content-center pt-5">
 	
-	<div class="form mt-5">
+	<div class="form color mt-5">
 	<form action="login.php" method="post">
 	  <div class="mb-3">
 		<label for="usuario" class="form-label">Usuario:</label>

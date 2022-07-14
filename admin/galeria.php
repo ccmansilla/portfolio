@@ -66,13 +66,13 @@
    <br>
 <!--ya tenemos un container en el header que cierra en el footer-->
 
-    <div class="row d-flex justify-content-center mb-5">
+    <div class="row d-flex justify-content-center mt-5 mb-5">
         <div class="col-md-6 col-sm-8">
-            <div class="form">
-                <div class="">
-                    Proyecto
+            <div class="card color">
+                <div class="card-header">
+                    <h3>Proyecto</h3>
                 </div>
-                <div class="">
+                <div class="card-body">
                     <!--para recepcionar archivos uso enctype-->
                     <form action="galeria.php" method="post" enctype="multipart/form-data">
                         <div>
@@ -91,7 +91,7 @@
                         </div>
                         <div>
                         <br>
-                        <input class="btn btn-success" type="submit" value="Enviar">
+                        <input class="btn btn-success" type="submit" value="Nuevo">
                         </div>
                 
                     </form>

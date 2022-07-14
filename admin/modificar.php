@@ -40,32 +40,32 @@ if($_POST){
 ?>
 <?php #leemos proyectos 1 por 1
   foreach($proyecto as $fila){ ?>
-    <div class="row d-flex justify-content-center mb-5">
-            <div class="col-md-10 col-sm-12">
-                <div class="color card">
+    <div class="row d-flex justify-content-center mt-5">
+            <div class="col-md-6 col-sm-8">
+                <div class="card color">
                     <div class="card-header">
-                        Datos del Proyecto
+                        <h3>Proyecto</h3>
                     </div>
                     <div class="card-body">
                         <!--para recepcionar archivos uso enctype-->
                         <form action="#" method="post" enctype="multipart/form-data">
                             <div>
-                                <label for="nombre">Nombre del Proyecto</label>
+                                <label for="nombre">Nombre:</label>
                                 <input required class="form-control" type="text" name="nombre" id="nombre" value="<?php echo $fila['nombre']; ?>">
                             </div>
                         
                             <div>
-                                <label for="archivo">Imagen del Proyecto</label>
+                                <label for="archivo">Imagen:</label>
                                 <input required class="form-control" type="file" name ="archivo" id="archivo" >
                             </div>
                             <br>
                             <div>
-                                <label for="descripcion">Indique Descripción del Proyecto</label>
+                                <label for="descripcion">Descripción:</label>
                                 <textarea required class="form-control" name="descripcion" id="descripcion" cols="30" rows="4"><?php echo $fila['descripcion'];?></textarea>
                             </div>
                             <div>
                             <br>
-                            <input class="btn btn-warning" type="submit" value="Modificar Proyecto">
+                            <input class="btn btn-warning" type="submit" value="Modificar">
                             </div>
                     
                         </form>
