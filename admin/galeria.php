@@ -63,10 +63,10 @@
  #print_r($resultado);
 
 ?>
-   <br>
+
 <!--ya tenemos un container en el header que cierra en el footer-->
 
-    <div class="row d-flex justify-content-center mt-5 mb-5">
+    <div class="row d-flex justify-content-center my-5">
         <div class="col-md-6 col-sm-8">
             <div class="card color">
                 <div class="card-header">

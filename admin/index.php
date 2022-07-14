@@ -16,13 +16,12 @@
 
     
 <!--bs5 jum-->
-<div class="p-5 bg-light mb-5">
+<div class="p-5 color mb-5">
     <div class="container">
         <h1 class="display-3">Bienvenido</h1>
         <p class="lead">Portfolio de Carlos Mansilla</p>
         <hr class="my-2">
         <p>Más Información</p>
-       
     </div>
 </div>
 
