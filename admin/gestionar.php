@@ -21,7 +21,7 @@
    
     #creo una instancia(objeto) de la clase de conexion
     $conexion = new Conexion();
-    $sql="INSERT INTO proyectos (id, nombre, imagen, descripcion, url) VALUES (NULL, '$nombre_proyecto' , '$imagen', '$descripcion', '$url')";
+    $sql="INSERT INTO proyectos (nombre, imagen, descripcion, url) VALUES ('$nombre_proyecto' , '$imagen', '$descripcion', '$url')";
     $id_proyecto = $conexion->ejecutar($sql);
 
     #para que no inserte muchas veces
