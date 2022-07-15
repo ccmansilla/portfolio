@@ -33,8 +33,7 @@ if($_POST){
     #creo una instancia(objeto) de la clase de conexion
     $conexion = new Conexion();
     $sql = "UPDATE proyectos SET nombre = '$nombre_proyecto' , imagen = '$imagen', descripcion = '$descripcion', url = '$url' WHERE proyectos.id = '$id';";
-    $id_proyecto = $conexion->ejecutar($sql);
-
+    $conexion->ejecutar($sql);
     header("location:gestionar.php");
 
 }

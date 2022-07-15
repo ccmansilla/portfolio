@@ -33,7 +33,7 @@
 <div class="container-fluid m-0 px-0">
 
 
-   <nav class="navbar navbar-expand-md mx-0 navbar-dark bg-dark">
+   <nav class="navbar navbar-expand-md mx-0 px-5 navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand py-0" href="index.php"> Admin> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

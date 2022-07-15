@@ -22,10 +22,8 @@
     #creo una instancia(objeto) de la clase de conexion
     $conexion = new Conexion();
     $sql="INSERT INTO proyectos (nombre, imagen, descripcion, url) VALUES ('$nombre_proyecto' , '$imagen', '$descripcion', '$url')";
-    $id_proyecto = $conexion->ejecutar($sql);
+    $conexion->ejecutar($sql);
 
-    #para que no inserte muchas veces
-   # header("location:galeria.php");
  }
  #si nos envian por url, get 
  if($_GET){
