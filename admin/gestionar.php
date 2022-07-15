@@ -103,7 +103,7 @@
             
         </div><!--cierra el col-->
     </div><!--cierra el row-->
-    <div class="tabla">
+    <div>
         <div class="row d-flex justify-content-center mb-5">
             <div class="col-md-10 col-sm-6">
                 <table class="table">
@@ -111,8 +111,7 @@
                         <tr>
                             <th>Nombre</th>
                             <th>Imagen</th>
-                            <th>Descripcion</th>
-                            <th>Url</th>
+                            <th class="texto">Descripcion</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -126,7 +125,6 @@
                             <td><?php echo $proyecto['nombre'];?></td>
                             <td> <img width="100" src="../upload/<?php echo $proyecto['imagen'];?>" alt="">  </td>
                             <td class="texto"><?php echo $proyecto['descripcion'];?></td>
-                            <td class="texto"><?php echo $proyecto['url'];?></td>
                             <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?php echo $proyecto['id'];?>">Borrar</a></td>
                             <td><a name="modificar" id="modificar" class="btn btn-warning" href="?modificar=<?php echo $proyecto['id'];?>">Modificar</a></td>
                         </tr>

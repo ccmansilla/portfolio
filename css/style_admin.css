@@ -33,6 +33,10 @@ body {
     margin: 5px;
 }
 
+main {
+    min-height: 70vh;
+}
+
 .form {
     padding: 20px;
     font-weight: bold;
@@ -43,19 +47,12 @@ body {
     color: white !important;
 }
 
-.tabla{
-    background-color: rgb(189, 189, 189) !important;
+.texto{
+    display: none;
 }
 
-@media screen and (max-width: 800px) {
-
-    .tabla{
-        width: 80%!important;
-        font-size: 0.8em!important;
-        background-color: white!important;
-    }
-
+@media screen and (min-width: 800px) {
     .texto{
-        text-overflow: clip!important;
+        display: table-cell;
     }
 }
