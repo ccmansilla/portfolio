@@ -2,14 +2,16 @@
 
 class Conexion{
     #atributos que son propios del objeto
-    private $servidor ="localhost";
-    private $usuario ="root";
-    private $pass = "";
+    private $servidor = "ec2-52-20-166-21.compute-1.amazonaws.com";
+    private $database = "d3sl9a337nfaho";
+    private $usuario = "yrjtfzdojysnuz";
+    private $port = "5432";
+    private $pass = "71ebad52ab2d79d10ffe62781d405be0f96df61342afdae8bf58cae5bfcb80c0";
     private $conexion;#objeto de tipo pdo, de la clase propia de php
    
     public function __construct(){
         try{
-            $this->conexion = new PDO("mysql:host=$this->servidor;dbname=portfolio",$this->usuario,$this->pass);
+            $this->conexion = new PDO("pgsql:host=$this->servidor;port=$this->port;dbname=$this->database;user=$this->usuario;password=$this->pass");
             #ACTIVAMOS LOS ERRORES Y LAS EXCEPTIONES
             $this->conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
