@@ -19,6 +19,7 @@ if($_GET){
 if($_POST){
     $nombre_proyecto = $_POST['nombre'];
     $descripcion = $_POST['descripcion'];
+    $url = $_POST['url'];
     #nombre de la imagen
     $imagen = $_FILES['archivo']['name'];
     #tenemos que guardar la imagen en una carpeta 
@@ -31,8 +32,7 @@ if($_POST){
     $id = $_SESSION['id_proyecto'];
     #creo una instancia(objeto) de la clase de conexion
     $conexion = new Conexion();
-    $sql="INSERT INTO `proyectos` (`id`, `nombre`, `imagen`, `descripcion`) VALUES (NULL, '$nombre_proyecto' , '$imagen', '$descripcion')";
-    $sql = "UPDATE `proyectos` SET `nombre` = '$nombre_proyecto' , `imagen` = '$imagen', `descripcion` = '$descripcion' WHERE `proyectos`.`id` = '$id';";
+    $sql = "UPDATE `proyectos` SET `nombre` = '$nombre_proyecto' , `imagen` = '$imagen', `descripcion` = '$descripcion', `url` = '$url' WHERE `proyectos`.`id` = '$id';";
     $id_proyecto = $conexion->ejecutar($sql);
 
     header("location:gestionar.php");
@@ -64,6 +64,10 @@ if($_POST){
                             <div>
                                 <label for="descripcion">Descripción:</label>
                                 <textarea required class="form-control" name="descripcion" id="descripcion" cols="30" rows="4"><?php echo $fila['descripcion'];?></textarea>
+                            </div>
+                            <div>
+                                <label for="url">Url:</label>
+                                <input required class="form-control" type="text" name="url" id="url" value="<?php echo $fila['url'];?>">
                             </div>
                             <div>
                             <br>

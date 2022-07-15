@@ -22,7 +22,7 @@
         <div class="card-body">
           <h5 class="card-title text-dark"><?php echo $proyecto['nombre'];?></h5>
           <p class="card-text text-dark"><?php echo $proyecto['descripcion'];?></p>
-          <a href="" class="btn btn-success" target="_blank">Abrir Pagina</a>
+          <a href="<?php echo $proyecto['url'];?>" class="btn btn-success" target="_blank">Abrir Pagina</a>
         </div>
       </div>
     </div>

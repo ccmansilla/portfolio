@@ -9,6 +9,7 @@
 
     $nombre_proyecto = $_POST['nombre'];
     $descripcion = $_POST['descripcion'];
+    $url = $_POST['url'];
     #nombre de la imagen
     $imagen = $_FILES['archivo']['name'];
     #tenemos que guardar la imagen en una carpeta 
@@ -19,8 +20,8 @@
     move_uploaded_file($imagen_temporal,"../upload/".$imagen);
    
     #creo una instancia(objeto) de la clase de conexion
-    $conexion = new conexion();
-    $sql="INSERT INTO `proyectos` (`id`, `nombre`, `imagen`, `descripcion`) VALUES (NULL, '$nombre_proyecto' , '$imagen', '$descripcion')";
+    $conexion = new Conexion();
+    $sql="INSERT INTO `proyectos` (`id`, `nombre`, `imagen`, `descripcion`, `url`) VALUES (NULL, '$nombre_proyecto' , '$imagen', '$descripcion', '$url')";
     $id_proyecto = $conexion->ejecutar($sql);
 
     #para que no inserte muchas veces
@@ -32,7 +33,7 @@
     #ademas de borrar de la base , tenemos que borrar la foto de la carpeta imagenes
    if(isset($_GET['borrar'])){
         $id = $_GET['borrar'];
-        $conexion = new conexion();
+        $conexion = new Conexion();
 
         #recuperamos la imagen de la base antes de borrar 
         $imagen = $conexion->consultar("select imagen FROM  `proyectos` where id=".$id);
@@ -54,10 +55,9 @@
         header("location:modificar.php?modificar=".$id);
     }
    
-    
  }
  #vamos a consultar para llenar la tabla 
- $conexion = new conexion();
+ $conexion = new Conexion();
  $proyectos= $conexion->consultar("SELECT * FROM `proyectos`");
  #comprobamos que la info este en forma de arreglo
  #print_r($resultado);
@@ -90,6 +90,10 @@
                             <textarea required class="form-control" name="descripcion" id="descripcion" cols="30" rows="4"></textarea>
                         </div>
                         <div>
+                            <label for="url">Url:</label>
+                            <input required class="form-control" type="text" name="url" id="url">
+                        </div>
+                        <div>
                         <br>
                         <input class="btn btn-success" type="submit" value="Agregar">
                         </div>
@@ -110,6 +114,7 @@
                             <th>Nombre</th>
                             <th>Imagen</th>
                             <th>Descripcion</th>
+                            <th>Url</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -123,6 +128,7 @@
                             <td><?php echo $proyecto['nombre'];?></td>
                             <td> <img width="100" src="../upload/<?php echo $proyecto['imagen'];?>" alt="">  </td>
                             <td class="texto"><?php echo $proyecto['descripcion'];?></td>
+                            <td class="texto"><?php echo $proyecto['url'];?></td>
                             <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?php echo $proyecto['id'];?>">Borrar</a></td>
                             <td><a name="modificar" id="modificar" class="btn btn-warning" href="?modificar=<?php echo $proyecto['id'];?>">Modificar</a></td>
                         </tr>
