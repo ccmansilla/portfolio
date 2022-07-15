@@ -5,7 +5,7 @@
   #mostrar datos 
   #vamos a consultar para llenar la tabla 
   $conexion = new Conexion();
-  $proyectos= $conexion->consultar("SELECT * FROM `proyectos`");
+  $proyectos= $conexion->consultar("SELECT * FROM proyectos");
   #comprobamos que la info este en forma de arreglo
   #print_r($resultado);
 

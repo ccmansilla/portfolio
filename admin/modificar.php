@@ -10,7 +10,7 @@ if($_GET){
         $_SESSION['id_proyecto'] = $id;
         #vamos a consultar para llenar la tabla 
         $conexion = new Conexion();
-        $proyecto= $conexion->consultar("SELECT * FROM `proyectos` where id=".$id);
+        $proyecto= $conexion->consultar("SELECT * FROM proyectos where id=".$id);
      
     }
 }
@@ -32,7 +32,7 @@ if($_POST){
     $id = $_SESSION['id_proyecto'];
     #creo una instancia(objeto) de la clase de conexion
     $conexion = new Conexion();
-    $sql = "UPDATE `proyectos` SET `nombre` = '$nombre_proyecto' , `imagen` = '$imagen', `descripcion` = '$descripcion', `url` = '$url' WHERE `proyectos`.`id` = '$id';";
+    $sql = "UPDATE proyectos SET nombre = '$nombre_proyecto' , imagen = '$imagen', descripcion = '$descripcion', url = '$url' WHERE proyectos.id = '$id';";
     $id_proyecto = $conexion->ejecutar($sql);
 
     header("location:gestionar.php");

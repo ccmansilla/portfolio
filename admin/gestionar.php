@@ -21,7 +21,7 @@
    
     #creo una instancia(objeto) de la clase de conexion
     $conexion = new Conexion();
-    $sql="INSERT INTO `proyectos` (`id`, `nombre`, `imagen`, `descripcion`, `url`) VALUES (NULL, '$nombre_proyecto' , '$imagen', '$descripcion', '$url')";
+    $sql="INSERT INTO proyectos (id, nombre, imagen, descripcion, url) VALUES (NULL, '$nombre_proyecto' , '$imagen', '$descripcion', '$url')";
     $id_proyecto = $conexion->ejecutar($sql);
 
     #para que no inserte muchas veces
@@ -36,12 +36,12 @@
         $conexion = new Conexion();
 
         #recuperamos la imagen de la base antes de borrar 
-        $imagen = $conexion->consultar("select imagen FROM  `proyectos` where id=".$id);
+        $imagen = $conexion->consultar("select imagen FROM  proyectos where id=".$id);
         #la borramos de la carpeta 
         unlink("../upload/".$imagen[0]['imagen']);
 
         #borramos el registro de la base 
-        $sql ="DELETE FROM `proyectos` WHERE `proyectos`.`id` =".$id; 
+        $sql ="DELETE FROM proyectos WHERE proyectos.id =".$id; 
         $id_proyecto = $conexion->ejecutar($sql);
 
         #para que no intente borrar muchas veces
@@ -58,7 +58,7 @@
  }
  #vamos a consultar para llenar la tabla 
  $conexion = new Conexion();
- $proyectos= $conexion->consultar("SELECT * FROM `proyectos`");
+ $proyectos= $conexion->consultar("SELECT * FROM proyectos");
  #comprobamos que la info este en forma de arreglo
  #print_r($resultado);
 
