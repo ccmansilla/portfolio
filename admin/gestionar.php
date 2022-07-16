@@ -124,7 +124,7 @@
                     <tr >
                         <!--<td scope="row"><?php #echo $proyecto['id'];?></td> -->
                         <td><?php echo $proyecto['nombre'];?></td>
-                        <td> <img width="100" src="../upload/<?php echo $proyecto['imagen'];?>" alt="">  </td>
+                        <td> <img width="100" src="../upload/<?php echo $proyecto['imagen'];?>" alt="../upload/<?php echo $proyecto['imagen'];?>">  </td>
                         <td class="tabla__texto__display"><?php echo $proyecto['descripcion'];?></td>
                         <td class="tabla__texto__display"><?php echo $proyecto['url'];?></td>
                         <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?php echo $proyecto['id'];?>">Borrar</a></td>

@@ -23,7 +23,7 @@ if($_POST){
     #nombre de la imagen
     $imagen = $_FILES['archivo']['name'];
     #tenemos que guardar la imagen en una carpeta 
-    $imagen_temporal=$_FILES['archivo']['tmp_name'];
+    $imagen_temporal = $_FILES['archivo']['tmp_name'];
     #creamos una variable fecha para concatenar al nombre de la imagen, para que cada imagen sea distinta y no se pisen 
     $fecha = new DateTime();
     $imagen= $fecha->getTimestamp()."_".$imagen;
@@ -57,7 +57,7 @@ if($_POST){
                         
                             <div>
                                 <label for="archivo">Imagen:</label>
-                                <input required class="form-control" type="file" name ="archivo" id="archivo" >
+                                <input required class="form-control" type="file" name ="archivo" id="archivo">
                             </div>
                             <br>
                             <div>
