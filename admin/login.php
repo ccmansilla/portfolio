@@ -45,33 +45,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/style_admin.css">
 	<link rel="icon" type="image/png" href="../img/icon.png">
-    <title>CM</title>
+    <title>Carlos Mansilla</title>
   </head>
   <body>
 	<div class="container d-flex justify-content-center pt-5">
-	
-	<div class="form color mt-5">
-	<form action="login.php" method="post">
-	  <div class="mb-3">
-		<label for="usuario" class="form-label">Usuario:</label>
-		<input type="text" class="form-control" id="usuario" name="usuario" require>
-		<div class="invalid-feedback">
-		  Por favor, debe ingresar un usuario.
+		<div class="form color mt-5">
+			<h2>Crud PortFolio</h2>
+			<br>
+			<form action="login.php" method="post">
+			<div class="mb-3">
+				<input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario" require>
+				<div class="invalid-feedback">
+				Por favor, debe ingresar el Usuario.
+				</div>
+			</div>
+			<div class="mb-3">
+				<input type="password" class="form-control" id="clave" name="clave" placeholder="Password" require>
+				<div class="invalid-feedback">
+				Por favor, debe ingresar el Password.
+				</div>
+			</div>
+			<div class="d-flex justify-content-center mb-3">
+				<button type="submit" id='booton' class="btn btn-success">Ingresar</button>
+			</div>
+			</form>
 		</div>
-	  </div>
-	  <div class="mb-3">
-		<label for="clave" class="form-label">Contraseña:</label>
-		<input type="password" class="form-control" id="clave" name="clave" require>
-		<div class="invalid-feedback">
-		  Por favor, debe ingresar una contrasena.
-		</div>
-	  </div>
-	  <div class="d-flex justify-content-center mb-3">
-	  	<button type="submit" id='booton' class="btn btn-success">Ingresar</button>
-	  </div>
-	</form>
-	</div>
-
 	</div>
 	<script>
 		let usuario = document.getElementById('usuario');

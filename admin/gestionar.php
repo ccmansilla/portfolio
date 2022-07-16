@@ -43,7 +43,7 @@
         $id_proyecto = $conexion->ejecutar($sql);
 
         #para que no intente borrar muchas veces
-         header("location:gestionar.php");
+        header("location:gestionar.php");
    }
 
    if(isset($_GET['modificar'])){

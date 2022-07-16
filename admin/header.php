@@ -48,6 +48,9 @@
                         <a class="nav-link <?php echo ($active == 'gestionar.php')? 'active' : '' ?>" aria-current="page"  href="gestionar.php">Gestionar</a>
                     </div> 
                     <div class="nav-item px-5">
+                        <a class="nav-link <?php echo ($active == 'mensajes.php')? 'active' : '' ?>" aria-current="page"  href="mensajes.php">Mensajes</a>
+                    </div> 
+                    <div class="nav-item px-5">
                         <a class="nav-link" href="cerrar.php">Salir</a> 
                     </div> 
                 </div> 

@@ -6,5 +6,13 @@ CREATE TABLE proyectos (
   url varchar(500) NOT NULL
 );
 
+CREATE TABLE mensajes (
+  id serial PRIMARY KEY,
+  nombre varchar(500) NOT NULL,
+  email varchar(500) NOT NULL,
+  texto text NOT NULL
+);
+
+
 
 
