@@ -31,16 +31,16 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			  <div class="navbar-nav d-flex justify-content-around w-100">
-				<div class="nav-item">
+				<div class="nav-item px-5">
 				  <a class="nav-link <?php echo ($active == 'index.php')? 'active' : '' ?>" href="index.php">Conocimientos</a>
 				</div>
-				<div class="nav-item">
+				<div class="nav-item px-5">
 				  <a class="nav-link <?php echo ($active == 'pages.php')? 'active' : '' ?>" href="pages.php">Paginas</a>
 				</div>
-				<div class="nav-item">
+				<div class="nav-item px-5">
 				  <a class="nav-link <?php echo ($active == 'contact.php')? 'active' : '' ?>" href="contact.php">Contacto</a>
 				</div>
-				<div class="nav-item">
+				<div class="nav-item px-5">
 				  <a class="nav-link" href="admin/index.php">Admin</a>
 				</div>
 			  </div>
