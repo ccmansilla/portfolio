@@ -42,7 +42,7 @@ if($_POST){
 <?php #leemos proyectos 1 por 1
   foreach($proyecto as $fila){ ?>
     <div class="row d-flex justify-content-center">
-            <div class="col-md-6 col-sm-8">
+            <div class="col-lg-6 col-md-8 col-sm-10">
                 <div class="card color">
                     <div class="card-header">
                         <h3>Proyecto</h3>

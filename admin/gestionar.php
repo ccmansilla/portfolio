@@ -65,7 +65,7 @@
 <!--ya tenemos un container en el header que cierra en el footer-->
 <main class="container py-5">
     <div class="row d-flex justify-content-center mb-5">
-        <div class="col-md-6 col-sm-8">
+        <div class="col-lg-6 col-md-8 col-sm-10">
             <div class="card color">
                 <div class="card-header">
                     <h3>Proyecto</h3>
@@ -104,37 +104,39 @@
         </div><!--cierra el col-->
     </div><!--cierra el row-->
     <div>
-        <div class="row d-flex justify-content-center mb-5">
-            <div class="col-md-10 col-sm-6">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Imagen</th>
-                            <th class="texto">Descripcion</th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody >
-                        <?php #leemos proyectos 1 por 1
-                        foreach($proyectos as $proyecto){ ?>
-                    
-                        <tr >
-                            <!--<td scope="row"><?php #echo $proyecto['id'];?></td> -->
-                            <td><?php echo $proyecto['nombre'];?></td>
-                            <td> <img width="100" src="../upload/<?php echo $proyecto['imagen'];?>" alt="">  </td>
-                            <td class="texto"><?php echo $proyecto['descripcion'];?></td>
-                            <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?php echo $proyecto['id'];?>">Borrar</a></td>
-                            <td><a name="modificar" id="modificar" class="btn btn-warning" href="?modificar=<?php echo $proyecto['id'];?>">Modificar</a></td>
-                        </tr>
+    <div class="row d-flex justify-content-center mb-5">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                        <th class="tabla__texto__display">Descripcion</th>
+                        <th class="tabla__texto__display">Url</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <?php #leemos proyectos 1 por 1
+                    foreach($proyectos as $proyecto){ ?>
+                
+                    <tr >
+                        <!--<td scope="row"><?php #echo $proyecto['id'];?></td> -->
+                        <td><?php echo $proyecto['nombre'];?></td>
+                        <td> <img width="100" src="../upload/<?php echo $proyecto['imagen'];?>" alt="">  </td>
+                        <td class="tabla__texto__display"><?php echo $proyecto['descripcion'];?></td>
+                        <td class="tabla__texto__display"><?php echo $proyecto['url'];?></td>
+                        <td><a name="eliminar" id="eliminar" class="btn btn-danger" href="?borrar=<?php echo $proyecto['id'];?>">Borrar</a></td>
+                        <td><a name="modificar" id="modificar" class="btn btn-warning" href="?modificar=<?php echo $proyecto['id'];?>">Modificar</a></td>
+                    </tr>
 
-                        <?php #cerramos la llave del foreach
-                        } ?>
-                    </tbody>
-                </table>
-            </div><!--cierra el col-->  
-        </div>
+                    <?php #cerramos la llave del foreach
+                    } ?>
+                </tbody>
+            </table>
+        </div><!--cierra el col-->  
+    </div>
     </div>
 </main>
 <?php include 'footer.php'; ?>
