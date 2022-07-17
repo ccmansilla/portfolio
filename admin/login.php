@@ -19,7 +19,7 @@
 		}
 	
 		#chequea si el usuario y la clave ingresados son los del administrador
-		if($usuario == 'admin' && $clave == '123') {
+		if($usuario == 'admin' && $clave == 'cac') {
 			#las variables que vamos a guardar en estas variables van a poder mantenerte en todas las paginas del sitio web
 			session_start();
 			
@@ -50,7 +50,7 @@
   <body>
 	<div class="container d-flex justify-content-center pt-5">
 		<div class="form color mt-5">
-			<h2>Crud PortFolio</h2>
+			<h2>Admin PortFolio</h2>
 			<br>
 			<form action="login.php" method="post">
 			<div class="mb-3">
