@@ -93,7 +93,7 @@
                         </div>
                         <div>
                         <br>
-                        <input class="btn btn-success" type="submit" value="Nuevo">
+                        <input class="btn btn-success" type="submit" value="Nueva">
                         </div>
                 
                     </form>
