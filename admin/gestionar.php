@@ -68,7 +68,7 @@
         <div class="col-lg-6 col-md-8 col-sm-10">
             <div class="card color">
                 <div class="card-header">
-                    <h3>Proyecto</h3>
+                    <h3>Pagina</h3>
                 </div>
                 <div class="card-body">
                     <!--para recepcionar archivos uso enctype-->
@@ -93,7 +93,7 @@
                         </div>
                         <div>
                         <br>
-                        <input class="btn btn-success" type="submit" value="Agregar">
+                        <input class="btn btn-success" type="submit" value="Nuevo">
                         </div>
                 
                     </form>

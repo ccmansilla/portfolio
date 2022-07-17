@@ -42,10 +42,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav d-flex justify-content-around w-100">
                     <div class="nav-item px-5">
-                        <a class="nav-link <?php echo ($active == 'index.php')? 'active' : '' ?>" aria-current="page"  href="index.php">Paginas</a>
+                        <a class="nav-link <?php echo ($active == 'index.php')? 'active' : '' ?>" aria-current="page"  href="index.php">Vista</a>
                     </div> 
                     <div class="nav-item px-5">
-                        <a class="nav-link <?php echo ($active == 'gestionar.php')? 'active' : '' ?>" aria-current="page"  href="gestionar.php">Gestionar</a>
+                        <a class="nav-link <?php echo ($active == 'gestionar.php')? 'active' : '' ?>" aria-current="page"  href="gestionar.php">Paginas</a>
                     </div> 
                     <div class="nav-item px-5">
                         <a class="nav-link <?php echo ($active == 'mensajes.php')? 'active' : '' ?>" aria-current="page"  href="mensajes.php">Mensajes</a>
